@@ -24,7 +24,7 @@ export default function Home() {
   ]);
   const [isLoading, setIsLoading] = useState(false);
   const [isShowModal, setIsShowModal] = useState(false);
-  const endOfMessagesRef = useRef(null);
+  const endOfMessagesRef = useRef<HTMLDivElement>(null);
 
   // modal
   const handleOpen = () => setIsShowModal(true);
